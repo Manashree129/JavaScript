@@ -40,4 +40,29 @@ const myFunction = function(){
 
 console.log(typeof myFunction); 
 
+// ################ MEMORY ###############
+
+// Stack (Primitive), Heap(Non-Primitive)
+
+let name = "Manashree"
+
+let name2 = name
+name2 = "Rakhade"
+
+console.log(name)
+console.log(name2)
+
+let user = {
+    email: "user@google.com",
+    id: 1
+}
+
+let user2 = user
+
+user2.email = "man@google.com"
+
+console.log(user)
+console.log(user2)
+
+
 
