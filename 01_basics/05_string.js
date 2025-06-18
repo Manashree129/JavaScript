@@ -25,5 +25,15 @@ const string3 = "   hello   "
 console.log(string3);
 console.log(string3.trim());
 
+const url = "https://js.com/js%20javascript"
 
+console.log(url.replace("%20", "-"))
+
+console.log(url.includes('react'))
+
+const stack = "JS-React-Angular"
+
+const splitStack = stack.split("-")
+
+console.log(splitStack)
 
