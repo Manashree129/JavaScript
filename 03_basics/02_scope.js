@@ -1,4 +1,3 @@
-
 let a = 40
 if (true){
     let a = 10
