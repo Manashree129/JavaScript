@@ -50,10 +50,15 @@ const books = [
 
 // console.log(mybooks)
 
-const userBooks = books.filter( (bk) => bk.publish >= 2000 )
+let userBooks = books.filter( (bk) => { return bk.publish >= 2000} )
+
+
+
+userBooks = books.filter( (bk) =>{ 
+  return bk.publish >= 1995 && bk.genre === 'History'
+} )
 
 console.log(userBooks);
-
 
 
 
