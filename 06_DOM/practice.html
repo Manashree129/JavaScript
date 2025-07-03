@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Loop</title>
+  
+</head>
+<body>
+
+<div id="container"></div>
+
+<script>
+  const colors = ["red", "blue", "green", "purple", "orange"];
+  const container = document.getElementById("container");
+
+  for (let i = 0; i < colors.length; i++) {
+    const myclass = document.createElement("div");
+
+    myclass.style.backgroundColor = colors[i];
+    myclass.style.padding = "10px";
+    myclass.style.margin = "5px 0";
+    myclass.style.color = "white";
+    myclass.className = "myclass";
+    myclass.style.backgroundColor = colors[i];
+    myclass.textContent = `This is box ${i + 1} with ${colors[i]} background`;
+    container.appendChild(myclass);
+  }
+</script>
+
+</body>
+</html>
